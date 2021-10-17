@@ -20,7 +20,6 @@ public class ECSNameGrabber {
 		String url = "http://secure.ecs.soton.ac.uk/people/" + emailBase; //intranet is way less bloated than the main website so I'd rather put a little work in to access the intranet than combing through the garbage of the main site
 		
 		//use jsoup to get the html and find the email address within
-		
 		Document doc = Jsoup.connect(url).cookie("cookie name", "cookie value").get(); //cookie begins with "shib"
 		
 		//find the name - first sign is on the title in the html
